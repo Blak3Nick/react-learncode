@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/Blak3Nick/react-learncode#readme",
   "devDependencies": {
+    "babel-preset-es2015": "^6.9.0",
     "webpack": "^1.13.1"
   }
 }
