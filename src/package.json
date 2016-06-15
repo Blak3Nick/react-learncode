@@ -1,0 +1,22 @@
+{
+  "name": "src",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Blak3Nick/react-learncode.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Blak3Nick/react-learncode/issues"
+  },
+  "homepage": "https://github.com/Blak3Nick/react-learncode#readme",
+  "devDependencies": {
+    "webpack": "^1.13.1"
+  }
+}
