@@ -6,7 +6,7 @@
       <span class="icon-bar"></span>
       <span class="icon-bar"></span>
     </button>
-    <a ui-sref="home" class="navbar-brand">Hi Dad!</a>
+    <a ui-sref="home" class="navbar-brand">HOME</a>
   </div>
   <nav class="navbar-collapse" uib-collapse="!vm.isCollapsed" role="navigation">
     <ul class="nav navbar-nav" ng-if="vm.menu.shouldRender(vm.authentication.user);">
@@ -27,6 +27,9 @@
       <li class="divider-vertical"></li>
       <li ui-sref-active="active">
         <a ui-sref="authentication.signin">Contact</a>
+      </li>
+      <li ui-sref-active="active">
+        <a ui-sref="authentication.signin">Support</a>
       </li>
     </ul>
     <ul class="nav navbar-nav navbar-right" ng-show="vm.authentication.user">
