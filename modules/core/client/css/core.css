@@ -82,3 +82,8 @@ li.active {
   left: 44%;
 }
 
+.footer {
+  background-color: darkgrey;
+  padding-bottom: 15px;
+  color: white;
+}
