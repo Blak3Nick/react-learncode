@@ -91,7 +91,7 @@ li.active {
 
 .footer {
   background-color: #191919;
-  padding-bottom: 15px;
+  padding-bottom: 5px;
   padding-top: 20px;
   color: white;
   margin-top: 25px;
@@ -107,4 +107,7 @@ a {
 }
 a:hover {
   text-decoration: none;
+}
+.copyrighted {
+  font-size: .7em;
 }
