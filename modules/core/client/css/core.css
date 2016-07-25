@@ -74,11 +74,18 @@ li.active {
 .top {
   padding-top: 1%;
 }
-.btn-lg {
+.downbtn {
   font-size: 1.5em;
   color: black;
   position: absolute;
   top: 85%;
+  left: 44%;
+}
+.arrowtop {
+  font-size: 1.5em;
+  color: black;
+  position: absolute;
+  top: 84%;
   left: 44%;
 }
 
