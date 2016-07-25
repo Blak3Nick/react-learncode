@@ -81,8 +81,4 @@ li.active {
   top: 85%;
   left: 44%;
 }
-@media not(max-width: 1024px) {
-  .downbtn {
-    display: none;
-  }
-}
+
