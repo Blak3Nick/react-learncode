@@ -62,3 +62,22 @@ ul.nav li.active a {
 a.navbar-brand {
     color: #000 !important;
 }
+.liblogo {
+  background-image: url('http://localhost:3000/modules/core/client/img/brand/Libretarian-Logo.png');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+li.active {
+    color: #000 !important;
+    background-color: white;
+}
+.top {
+  padding-top: 1%;
+}
+.btn-lg {
+  font-size: 1.5em;
+  color: black;
+  position: absolute;
+  top: 85%;
+  left: 44%;
+}
