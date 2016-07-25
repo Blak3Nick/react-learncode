@@ -42,3 +42,23 @@ a:hover .header-profile-image {
 .has-error .help-inline.error-text {
   display: inline;
 }
+.navbar {
+  background: none;
+  border: none;
+
+}
+ul.nav li a, ul.nav li a:visited {
+    color: #000 !important;
+}
+
+ul.nav li a:hover, ul.nav li a:active {
+    color: #000 !important;
+}
+
+ul.nav li.active a {
+    color: #000 !important;
+
+}
+a.navbar-brand {
+    color: #000 !important;
+}
