@@ -85,7 +85,7 @@ li.active {
   font-size: 1.5em;
   color: black;
   position: absolute;
-  top: 84%;
+  top: 83%;
   left: 44%;
 }
 
@@ -110,4 +110,16 @@ a:hover {
 }
 .copyrighted {
   font-size: .7em;
+}
+.face {
+  max-width: 40px;
+  max-height: 40px;
+  padding-left: 15px;
+  padding-top: 3px;
+}
+.twit {
+  max-width: 40px;
+  max-height: 40px;
+  padding-left: 15px;
+  padding-top: 3px;
 }
