@@ -1,0 +1,23 @@
+<section>
+  <div class="page-header">
+    <h1 ng-bind="vm.blog.title"></h1>
+  </div>
+  <div class="pull-right" ng-show="vm.blog.isCurrentUserOwner">
+    <a class="btn btn-primary" ui-sref="blogs.edit({ blogId: vm.blog._id })">
+      <i class="glyphicon glyphicon-edit"></i>
+    </a>
+    <a class="btn btn-primary" ng-click="vm.remove()">
+      <i class="glyphicon glyphicon-trash"></i>
+    </a>
+  </div>
+  <small>
+    <em class="text-muted">
+      Posted on
+      <span ng-bind="vm.blog.created | date:'mediumDate'"></span>
+      by
+      <span ng-if="vm.blog.user" ng-bind="vm.blog.user.displayName"></span>
+      <span ng-if="!vm.blog.user">Deleted User</span>
+    </em>
+  </small>
+  <p class="lead" ng-bind="vm.blog.content"></p>
+</section>
