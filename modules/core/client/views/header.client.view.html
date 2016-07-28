@@ -1,12 +1,12 @@
 <div class="container" ng-controller="HeaderController as vm">
-  <div class="navbar-header">
-    <button class="navbar-toggle" type="button" ng-click="vm.isCollapsed = !vm.isCollapsed">
+  <div style="background-color:transparent;background-image:none;" class="navbar-header">
+    <button style="background-color:transparent;background-image:none;" class="navbar-toggle" type="button" ng-click="vm.isCollapsed = !vm.isCollapsed">
       <span class="sr-only">Toggle navigation</span>
       <span class="icon-bar"></span>
       <span class="icon-bar"></span>
       <span class="icon-bar"></span>
     </button>
-    
+
     <a class='nav navbar-nav navbar-right' href="https://www.facebook.com/curtnicholsonforcouncil" target='_blank'>
       <img  alt="Facebook" class="img-responsive text-center face" src="modules/core/client/img/brand/Facebook.png" />
     </a>
@@ -14,46 +14,43 @@
       <img alt="Twitter" class="img-responsive text-center twit" src="modules/core/client/img/brand/Twitter.png" />
     </a>
   </div>
-  <nav class="navbar-collapse" uib-collapse="!vm.isCollapsed" role="navigation">
-    <ul class="nav navbar-nav" ng-if="vm.menu.shouldRender(vm.authentication.user);">
-      <li ng-repeat="item in vm.menu.items | orderBy: 'position'" ng-if="item.shouldRender(vm.authentication.user);" ng-switch="item.type" ng-class="{ dropdown: item.type === 'dropdown' }" ui-sref-active="active" class="{{item.class}}" uib-dropdown="item.type === 'dropdown'">
-        <a ng-switch-when="dropdown" class="dropdown-toggle" uib-dropdown-toggle role="button">{{::item.title}}&nbsp;<span class="caret"></span></a>
-        <ul ng-switch-when="dropdown" class="dropdown-menu">
-          <li ng-repeat="subitem in item.items | orderBy: 'position'" ng-if="subitem.shouldRender(vm.authentication.user);">
-            <a ui-sref="{{subitem.state}}" ng-bind="subitem.title"></a>
+  <nav  class="navbar-collapse" style="background-color:transparent;background-image:none;" uib-collapse="!vm.isCollapsed" role="navigation">
+    <ul  style="background-color:transparent;background-image:none;" class="nav navbar-nav navbar-right" ng-if="vm.menu.shouldRender(vm.authentication.user);">
+      <li style="background-color:transparent;background-image:none;" ng-repeat="item in vm.menu.items | orderBy: 'position'" ng-if="item.shouldRender(vm.authentication.user);" ng-switch="item.type" ng-class="{ dropdown: item.type === 'dropdown' }" ui-sref-active="active" class="{{item.class}}" uib-dropdown="item.type === 'dropdown'">
+        <a style="background-color:transparent;background-image:none;" ng-switch-when="dropdown" class="dropdown-toggle" uib-dropdown-toggle role="button">{{::item.title}}&nbsp;<span class="caret"></span></a>
+        <ul style="background-color:transparent;background-image:none;" ng-switch-when="dropdown" class="dropdown-menu">
+          <li style="background-color:transparent;background-image:none;" ng-repeat="subitem in item.items | orderBy: 'position'" ng-if="subitem.shouldRender(vm.authentication.user);">
+            <a style="background-color:transparent;background-image:none;" ui-sref="{{subitem.state}}" ng-bind="subitem.title"></a>
           </li>
         </ul>
         <a ng-switch-default ui-sref="{{item.state}}" ng-bind="item.title"></a>
       </li>
     </ul>
-    <ul class="nav navbar-nav navbar-right" ng-hide="vm.authentication.user">
+    <ul style="background-color:transparent;background-image:none;" class="nav navbar-nav navbar-right" ng-hide="vm.authentication.user">
       <li>
         <a ui-sref="home" class="navbar">Home</a>
       </li>
       <li ui-sref-active="active">
-        <a ui-sref="authentication.signup">Blog</a>
+        <a ui-sref="authentication.signup">Support</a>
       </li>
       <li class="divider-vertical"></li>
-      <li ui-sref-active="active">
+      <li style="background-color:transparent;background-image:none;" ui-sref-active="active">
         <a ui-sref="authentication.signin">Contact</a>
       </li>
-      <li ui-sref-active="active">
-        <a ui-sref="authentication.signin">Support</a>
-      </li>
     </ul>
-    <ul class="nav navbar-nav navbar-right" ng-show="vm.authentication.user">
-      <li class="dropdown" uib-dropdown>
-        <a class="dropdown-toggle user-header-dropdown-toggle" uib-dropdown-toggle role="button">
+    <ul style="background-color:transparent;background-image:none;" class="nav navbar-nav navbar-right" ng-show="vm.authentication.user">
+      <li style="background-color:transparent;background-image:none;" class="dropdown" uib-dropdown>
+        <a style="background-color:transparent;background-image:none;" class="dropdown-toggle user-header-dropdown-toggle" uib-dropdown-toggle role="button">
           <img ng-src="{{vm.authentication.user.profileImageURL}}" alt="{{vm.authentication.user.displayName}}" class="header-profile-image" />
           <span ng-bind="vm.authentication.user.displayName"></span> <b class="caret"></b>
         </a>
-        <ul class="dropdown-menu" role="menu">
-          <li ui-sref-active="active" ng-repeat="item in vm.accountMenu.items">
+        <ul style="background-color:transparent;background-image:none;" class="dropdown-menu" role="menu">
+          <li style="background-color:transparent;background-image:none;" ui-sref-active="active" ng-repeat="item in vm.accountMenu.items">
             <a ui-sref="{{item.state}}" ng-bind="item.title"></a>
           </li>
           <li class="divider"></li>
           <li>
-            <a href="/api/auth/signout" target="_self">Signout</a>
+            <a style="background-color:transparent;background-image:none;" href="/api/auth/signout" target="_self">Signout</a>
           </li>
         </ul>
       </li>
