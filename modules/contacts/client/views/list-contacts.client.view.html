@@ -1,0 +1,27 @@
+<section>
+
+    <div class="row">
+      <div class="col-md-12 col-sm-12 col-xs-12">
+        <img alt="Blue Triangle" class="img-responsive text-center" src="modules/core/client/img/brand/Triangle.png" />
+      </div>
+    </div>
+    <div class="page-header">
+      <h1 class='mainContact'>Contact</h1>
+    </div>
+  <div class="list-group">
+    <a ng-repeat="contact in vm.contacts" ui-sref="contacts.view({ contactId: contact._id })" class="list-group-item">
+      <small class="list-group-item-text">
+        Posted on
+        <span ng-bind="contact.created | date:'mediumDate'"></span>
+        by
+        <span ng-if="contact.user" ng-bind="contact.user.displayName"></span>
+        <span ng-if="!contact.user">Deleted User</span>
+      </small>
+      <h4 class="list-group-item-heading" ng-bind="contact.title"></h4>
+      <p class="list-group-item-text" ng-bind="contact.content"></p>
+    </a>
+  </div>
+  <div class="alert alert-warning text-center" ng-if="vm.contacts.$resolved && !vm.contacts.length">
+    No contacts yet, why don't you <a ui-sref="contacts.create">create one</a>?
+  </div>
+</section>
