@@ -17,7 +17,7 @@
 
     // Add the dropdown list item
     menuService.addSubMenuItem('topbar', 'contacts', {
-      title: 'List Contacts',
+      title: 'Contact Curt Nicholson',
       state: 'contacts.list'
     });
 
