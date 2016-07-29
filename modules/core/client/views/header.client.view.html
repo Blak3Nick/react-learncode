@@ -23,32 +23,32 @@
             <a style="background-color:transparent;background-image:none;" ui-sref="{{subitem.state}}" ng-bind="subitem.title"></a>
           </li>
         </ul>
-        <a ng-switch-default ui-sref="{{item.state}}" ng-bind="item.title"></a>
+        <a style="background-color:transparent;background-image:none;" ng-switch-default ui-sref="{{item.state}}" ng-bind="item.title"></a>
       </li>
     </ul>
     <ul style="background-color:transparent;background-image:none;" class="nav navbar-nav navbar-right" ng-hide="vm.authentication.user">
-      <li>
-        <a ui-sref="home" class="navbar">Home</a>
+      <li style="background-color:transparent;background-image:none;">
+        <a style="background-color:transparent;background-image:none;" ui-sref="home" class="navbar">Home</a>
       </li>
-      <li ui-sref-active="active">
-        <a ui-sref="authentication.signup">Support</a>
-      </li>
-      <li class="divider-vertical"></li>
       <li style="background-color:transparent;background-image:none;" ui-sref-active="active">
-        <a ui-sref="authentication.signin">Contact</a>
+        <a style="background-color:transparent;background-image:none;" ui-sref="authentication.signup">Support</a>
+      </li>
+      <li style="background-color:transparent;background-image:none;" class="divider-vertical"></li>
+      <li style="background-color:transparent;background-image:none;" ui-sref-active="active">
+        <a style="background-color:transparent;background-image:none;" ui-sref="authentication.signin">Contact</a>
       </li>
     </ul>
     <ul style="background-color:transparent;background-image:none;" class="nav navbar-nav navbar-right" ng-show="vm.authentication.user">
       <li style="background-color:transparent;background-image:none;" class="dropdown" uib-dropdown>
         <a style="background-color:transparent;background-image:none;" class="dropdown-toggle user-header-dropdown-toggle" uib-dropdown-toggle role="button">
-          <img ng-src="{{vm.authentication.user.profileImageURL}}" alt="{{vm.authentication.user.displayName}}" class="header-profile-image" />
-          <span ng-bind="vm.authentication.user.displayName"></span> <b class="caret"></b>
+          <img style="background-color:transparent;background-image:none;" ng-src="{{vm.authentication.user.profileImageURL}}" alt="{{vm.authentication.user.displayName}}" class="header-profile-image" />
+          <span style="background-color:transparent;background-image:none;" ng-bind="vm.authentication.user.displayName"></span> <b class="caret"></b>
         </a>
         <ul style="background-color:transparent;background-image:none;" class="dropdown-menu" role="menu">
           <li style="background-color:transparent;background-image:none;" ui-sref-active="active" ng-repeat="item in vm.accountMenu.items">
-            <a ui-sref="{{item.state}}" ng-bind="item.title"></a>
+            <a style="background-color:transparent;background-image:none;" ui-sref="{{item.state}}" ng-bind="item.title"></a>
           </li>
-          <li class="divider"></li>
+          <li  style="background-color:transparent;background-image:none;" class="divider"></li>
           <li>
             <a style="background-color:transparent;background-image:none;" href="/api/auth/signout" target="_self">Signout</a>
           </li>
