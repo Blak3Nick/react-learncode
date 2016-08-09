@@ -5,10 +5,12 @@
         <img alt="Blue Triangle" class="img-responsive text-center" src="modules/core/client/img/brand/Triangle.png" />
       </div>
     </div>
-    <div class="page-header">
+    <div class="row">
+    <div class="page-header col-md-1 col-md-offset-2">
       <h1 class='mainBlog'>Blog</h1>
     </div>
-  <div class="list-group">
+    </div>
+  <div class="list-group col-md-3">
     <a ng-repeat="blog in vm.blogs" ui-sref="blogs.view({ blogId: blog._id })" class="list-group-item">
       <small class="list-group-item-text">
         Posted on
